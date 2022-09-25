@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "cross-env UMI_ENV=~dev umi dev",
     "build": "cross-env UMI_ENV=~prod umi build",
-    "build:test": "cross-env UMI_ENV=~test umi build",
+    "build:test1": "cross-env UMI_ENV=~test1 umi build",
+    "build:test2": "cross-env UMI_ENV=~test2 umi build",
+    "build:test3": "cross-env UMI_ENV=~test3 umi build",
     "postinstall": "umi setup",
     "setup": "umi setup"
   },

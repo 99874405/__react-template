@@ -1,5 +1,5 @@
 export default {
   define: {
-    FETCH_BASE_URL: '~test',
+    FETCH_BASE_URL: '~test1',
   }
 };
