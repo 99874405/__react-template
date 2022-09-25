@@ -2,15 +2,9 @@
   "private": true,
   "author": "我亦无他 <guofengwu1994@163.com>",
   "scripts": {
-    "start": "umi dev",
-    "start:dev": "cross-env UMI_ENV=~dev umi dev",
-    "start:prod": "cross-env UMI_ENV=~prod umi dev",
-    "start:test": "cross-env UMI_ENV=~test umi dev",
-    "build": "umi build",
-    "build:dev": "cross-env UMI_ENV=~dev umi build",
-    "build:prod": "cross-env UMI_ENV=~prod umi build",
+    "dev": "cross-env UMI_ENV=~dev umi dev",
+    "build": "cross-env UMI_ENV=~prod umi build",
     "build:test": "cross-env UMI_ENV=~test umi build",
-    "build:view": "cross-env UMI_ENV=~view umi preview --port 9527",
     "postinstall": "umi setup",
     "setup": "umi setup"
   },
