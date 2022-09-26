@@ -7,8 +7,9 @@
     "build:test1": "cross-env UMI_ENV=~test1 umi build",
     "build:test2": "cross-env UMI_ENV=~test2 umi build",
     "build:test3": "cross-env UMI_ENV=~test3 umi build",
-    "postinstall": "umi setup",
-    "setup": "umi setup"
+    "lint": "umi lint --fix",
+    "setup": "umi setup",
+    "postinstall": "umi setup"
   },
   "dependencies": {
     "tailwindcss": "^3",
