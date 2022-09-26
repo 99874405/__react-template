@@ -8,6 +8,7 @@
     "build:test2": "cross-env UMI_ENV=~test2 umi build",
     "build:test3": "cross-env UMI_ENV=~test3 umi build",
     "lint": "umi lint --fix",
+    "prepare": "husky install",
     "setup": "umi setup",
     "postinstall": "umi setup"
   },
