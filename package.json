@@ -9,7 +9,7 @@
     "build:test3": "cross-env UMI_ENV=~test3 umi build",
     "setup": "umi setup",
     "postinstall": "umi setup",
-    "lint": "umi lint --fix",
+    "cz": "git add . && git-cz",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -21,7 +21,10 @@
     "@types/react-dom": "^18.0.0",
     "@umijs/lint": "^4.0.22",
     "@umijs/plugins": "^4.0.22",
+    "commitizen": "^4.2.5",
     "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.1",
@@ -41,5 +44,10 @@
       "umi lint --fix",
       "prettier --write"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
   }
 }
