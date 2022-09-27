@@ -1,6 +1,6 @@
 {
   "private": true,
-  "author": "我亦无他",
+  "author": "我也有小虎牙呀",
   "scripts": {
     "dev": "cross-env UMI_ENV=~dev umi dev",
     "build": "cross-env UMI_ENV=~prod umi build",
@@ -43,7 +43,7 @@
     }
   },
   "lint-staged": {
-    "src/*.{js,jsx,ts,tsx,css,less}": [
+    "src/**/*.{js,jsx,ts,tsx,css,less}": [
       "prettier --write --ignore-unknown",
       "umi lint --fix"
     ]

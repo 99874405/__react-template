@@ -6,8 +6,8 @@
 - [`yarn build:test2`] 测试部署
 - [`yarn build:test3`] 测试部署
 
-- EditorConfig for VS Code
-- Visual Studio Code Commitzen Support
-- ESLint
-- Stylelint
-- Prettier - Code formatter
+- EditorConfig for VS Code [可选]
+- Visual Studio Code Commitzen Support [可选]
+- ESLint [必装]
+- Stylelint [必装]
+- Prettier - Code formatter [必装]

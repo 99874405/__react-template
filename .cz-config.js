@@ -1,6 +1,5 @@
 module.exports = {
   allowCustomScopes: true,
-  allowBreakingChanges: ['wip'],
   scopes: [{ name: 'all' }],
   messages: {
     type: '<type> 用於說明 commit 的類別，只允許使用下面 9 個標識: \n',
