@@ -43,7 +43,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,css,less}": [
+    "src/*.{js,jsx,ts,tsx,css,less}": [
       "prettier --write --ignore-unknown",
       "umi lint --fix"
     ]
