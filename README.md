@@ -8,6 +8,7 @@
 
 - EditorConfig for VS Code [可选]
 - Visual Studio Code Commitzen Support [可选]
+
 - ESLint [必装]
 - Stylelint [必装]
 - Prettier - Code formatter [必装]
