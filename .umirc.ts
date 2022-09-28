@@ -1,6 +1,8 @@
 export default {
+  clientLoader: {},
   tailwindcss: {},
-  npmClient: "yarn",
   plugins: ["@umijs/plugins/dist/tailwindcss"],
+  extraPostCSSPlugins: [require("tailwindcss")],
+  npmClient: "yarn",
   hash: true,
 };
