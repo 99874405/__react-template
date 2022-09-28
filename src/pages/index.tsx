@@ -1,4 +1,4 @@
-import yayJpg from '../assets/yay.jpg';
+import yayJpg from '../assets/yay.jpg'
 
 export default function HomePage() {
   return (
@@ -10,6 +10,9 @@ export default function HomePage() {
       <p>
         To get started, edit <code>pages/index.tsx</code> and save to reload.
       </p>
+      <p className="font-sans ...">The quick brown fox ...</p>
+      <p className="font-serif ...">The quick brown fox ...</p>
+      <p className="font-mono ...">The quick brown fox ...</p>
     </div>
-  );
+  )
 }
