@@ -10,7 +10,7 @@
     "setup": "umi setup",
     "postinstall": "umi setup",
     "cz": "git cz",
-    "cz-log": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "cz-log": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "prepare": "husky install"
   },
   "dependencies": {
