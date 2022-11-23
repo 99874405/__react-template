@@ -1,49 +1,43 @@
 {
   "private": true,
-  "author": "我也有小虎牙呀",
+  "author": "Fengwu",
   "scripts": {
     "dev": "cross-env UMI_ENV=~dev umi dev",
     "build": "cross-env UMI_ENV=~prod umi build",
     "build:test1": "cross-env UMI_ENV=~test1 umi build",
     "build:test2": "cross-env UMI_ENV=~test2 umi build",
     "build:test3": "cross-env UMI_ENV=~test3 umi build",
+    "prepare": "husky install",
     "setup": "umi setup",
-    "postinstall": "umi setup",
-    "cz": "git cz",
-    "cz-log": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "prepare": "husky install"
+    "postinstall": "umi setup"
   },
   "dependencies": {
-    "@types/aos": "^3.0.4",
-    "@types/react-helmet": "^6.1.5",
-    "@types/react-lottie": "^1.2.6",
     "ahooks": "^3.7.2",
     "animate.css": "^4.1.1",
     "antd": "^4.24.0",
     "aos": "^2.3.4",
-    "autoprefixer": "^10.4.12",
-    "react-back-top": "^1.0.4",
+    "bignumber.js": "^9.1.0",
+    "dayjs": "^1.11.6",
+    "ethers": "^5.7.2",
     "react-confetti": "^6.1.0",
     "react-helmet": "^6.1.0",
     "react-loading": "^2.0.3",
     "react-lottie": "^1.2.3",
-    "react-sticky": "^6.0.3",
     "react-sticky-box": "^1.0.2",
-    "react-toastify": "^9.0.8",
-    "tailwindcss": "^3",
-    "umi": "^4.0.22"
+    "react-toastify": "^9.0.8"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@types/aos": "^3.0.4",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "@types/react-helmet": "^6.1.5",
+    "@types/react-lottie": "^1.2.6",
     "@umijs/lint": "^4.0.22",
     "@umijs/plugins": "^4.0.22",
-    "commitizen": "^4.2.5",
+    "autoprefixer": "^10.4.12",
     "cross-env": "^7.0.3",
-    "cz-customizable": "^7.0.0",
-    "cz-git": "^1.3.11",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.1",
@@ -51,13 +45,9 @@
     "prettier": "^2.7.1",
     "stylelint": "^14.12.1",
     "stylelint-config-prettier": "^9.0.3",
-    "typescript": "^4.1.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "tailwindcss": "^3",
+    "typescript": "^4.1.2",
+    "umi": "^4.0.22"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,css,less}": [
@@ -65,9 +55,9 @@
       "umi lint --fix"
     ]
   },
-  "config": {
-    "commitizen": {
-      "path": "cz-customizable"
-    }
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
