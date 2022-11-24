@@ -1,3 +1,5 @@
 *.md
 /package.json
 /tailwind.config.js
+/src/global.less
+/.umirc.ts
