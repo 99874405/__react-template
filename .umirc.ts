@@ -9,6 +9,8 @@ export default defineConfig({
   extraPostCSSPlugins: [
     require('tailwindcss'),
     require('autoprefixer'),
-    require('postcss-preset-env')(),
+    require('postcss-preset-env')({
+      stage: 0,
+    }),
   ],
 })
